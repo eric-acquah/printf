@@ -72,7 +72,7 @@ int print_words(char *word)
 {
 	int counter;
 
-	for (counter = 0; word[counter] != '\0'; i++)
+	for (counter = 0; word[counter] != '\0'; counter++)
 	{
 		_print(word[counter]);
 	}
