@@ -24,7 +24,7 @@ int print_words(char *word)
 {
 	int byts;
 
-	if (word == NULL || *word == '\0')
+	if (word == NULL)
 		return (-1);
 
 	for (byts = 0; word[byts] != '\0'; byts++)
