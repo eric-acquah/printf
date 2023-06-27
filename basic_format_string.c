@@ -31,7 +31,7 @@ int _printf(const char *format, ...)
 			case 2:/*checked for string specifier*/
 				if (format[i + 1] != '\0')
 				{
-					words = va_arg(holders, char *);
+					words = (char *)va_arg(holders, int *);
 					if (words == NULL)
 						len += print_words("(null)");
 					len += print_words(words);
