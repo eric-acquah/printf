@@ -43,8 +43,7 @@ int _printf(const char *format, ...)
 				format++;
 				break;
 			default:
-				len += _print('%');
-				format++;
+				return (-1);
 			}
 		}
 	}
