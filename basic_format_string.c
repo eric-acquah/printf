@@ -1,4 +1,5 @@
 #include <stdarg.h>
+#include <unistd.h>
 #include "main.h"
 
 /**
@@ -43,7 +44,8 @@ int _printf(const char *format, ...)
 				format++;
 				break;
 			default:
-				return (-1);
+				len += _print('%');
+				format++;
 			}
 		}
 	}
