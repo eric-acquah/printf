@@ -19,16 +19,12 @@ switch (format[i + 1] == 'c' ? 1 : format[i + 1] == 's' ? 2 :
                                         format++;
                                 }
                                 break;
-                        case 3:/*for decimal sspecifier*/
+                        case 3:/*for decimal specifier*/
                                 decimal = va_arg(holders, int);
                                 len += print_number(decimal);
                                 format++;
                                 break;
                         case 4:/*for double % sign*/
-                                len += _print('%');
-                                format++;
-                                break;
-			 case 4:/*for double % sign*/
                                 len += _print('%');
                                 format++;
                                 break;
