@@ -13,7 +13,6 @@
 
 void *resize(unsigned int size, unsigned int elem, void *old)
 {
-<<<<<<< HEAD
 	unsigned int i;
 	void *new;
 	char *clone;
@@ -39,7 +38,7 @@ void *resize(unsigned int size, unsigned int elem, void *old)
 	free(old);
 
 	return (new);
-=======
+
         unsigned int i;
         void *new;
         char *clone;
@@ -65,5 +64,4 @@ void *resize(unsigned int size, unsigned int elem, void *old)
         free(old);
 
         return (new);
->>>>>>> 6304504bebc1f7eeac211824bfb73d0c5df0c032
 }
