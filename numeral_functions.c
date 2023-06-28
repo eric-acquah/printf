@@ -43,3 +43,4 @@ int print_number(int num)
 
         free(num_array);
         return (len);
+}
