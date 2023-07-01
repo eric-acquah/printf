@@ -12,7 +12,7 @@ int _print(char letter);
 
 int print_words(char *word);
 
-int print_number(int num);
+int print_number(int num, unsigned int size, int base, int sign);
 
 void *resize(unsigned int size, unsigned int elem, void *old);
 
