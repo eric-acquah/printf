@@ -27,8 +27,8 @@ case 3:/*for decimal specifier*/
 	format++;
 	break;
 case 4:/*for binary specifier*/
-	decimal = va_arg(holders, int);
-	len += print_number(decimal, 12, 2, -1);/*value, size and base*/
+	no_sign = va_arg(holders, unsigned int);
+	len += print_number(no_sign, 12, 2, -1);/*value, size and base*/
 	format++;
 	break;
 case 5:/*for unsigned specifier*/
